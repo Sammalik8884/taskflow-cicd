@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow - About</title>
+    <!-- Fonts matched precisely to the dashboard design -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Small style accommodations for clean, scannable documentation layout */
+        .doc-section {
+            margin-bottom: 2rem;
+        }
+
+        .doc-section h2 {
+            color: var(--dark);
+            font-size: 1.5rem;
+            margin-bottom: 0.75rem;
+            margin-top: 1.5rem;
+        }
+
+        .guide-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .guide-item {
+            padding: 1rem;
+            border-left: 4px solid var(--primary);
+            background: #f8fafc;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 1rem;
+        }
+
+        .guide-item strong {
+            color: var(--primary);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Uniform Header Component -->
+    <header>
+        <a href="index.html" class="logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 11l3 3L22 4"></path>
+                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+            </svg>
+            TaskFlow
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="task-list.html">Tasks</a></li>
+                <li><a href="add-task.html">Add Task</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Container -->
+    <main>
+        <h1>About TaskFlow</h1>
+        <p style="color: var(--gray); margin-bottom: 2rem; font-size: 1.1rem;">Discover the philosophy behind our
+            interface and master the application using our comprehensive guide.</p>
+
+        <!-- Application Overview Card -->
+        <div class="card doc-section">
+            <h2>Our Purpose</h2>
+            <p style="color: var(--dark); margin-bottom: 1rem;">
+                TaskFlow is a high-performance, minimalist task-management solution designed to maximize focus and
+                streamline personal workflows. By stripping away extraneous bloat, it transforms raw productivity data
+                into clean, manageable priorities.
+            </p>
+            <p style="color: var(--gray); font-size: 0.95rem;">
+                Built natively to operate inside an <strong>Nginx-based container</strong>, TaskFlow serves as a
+                baseline architecture optimized for enterprise CI/CD verification models—demonstrating automated code
+                integration to production targets.
+            </p>
+        </div>
+
+        <!-- System Usage Guide Card -->
+        <div class="card doc-section">
+            <h2>Application Usage Guide</h2>
+            <p style="color: var(--gray); margin-bottom: 1.5rem;">Follow these operational steps to maximize tracking
+                efficiency across the localized application interface:</p>
+
+            <div class="guide-list">
+                <div class="guide-item">
+                    <strong>1. Analyze Performance via Dashboard</strong>
+                    <p style="color: var(--gray); font-size: 0.9rem; margin-top: 0.25rem;">Navigate to the core control
+                        panel to instantly track total metrics, warning indicators for pending milestones, and verified
+                        system operations.</p>
+                </div>
+
+                <div class="guide-item" style="border-left-color: var(--warning);">
+                    <strong>2. Register New Metrics</strong>
+                    <p style="color: var(--gray); font-size: 0.9rem; margin-top: 0.25rem;">Utilize our strict data
+                        collection form to provision clear task titles, functional descriptions, designated calendars,
+                        and prioritized tier parameters.</p>
+                </div>
+
+                <div class="guide-item" style="border-left-color: var(--secondary);">
+                    <strong>3. Supervise via Filter Matrix</strong>
+                    <p style="color: var(--gray); font-size: 0.9rem; margin-top: 0.25rem;">Review the master data matrix
+                        to isolate elements instantly based on active status tags or priority parameters using our
+                        optimized layout.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Uniform Footer Component -->
+    <footer>
+        <p>&copy; 2026 TaskFlow. DevOps Fundamentals Assignment 04.</p>
+    </footer>
+</body>
+
+</html>
